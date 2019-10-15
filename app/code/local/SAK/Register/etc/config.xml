@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <SAK_Register>
+            <version>0.1.0</version>
+        </SAK_Register>
+    </modules>
+    <frontend>
+        <layout>
+            <updates>
+                <sak_register>
+                    <file>sak/register.xml</file>
+                </sak_register>
+            </updates>
+        </layout>
+    </frontend>
+</config>

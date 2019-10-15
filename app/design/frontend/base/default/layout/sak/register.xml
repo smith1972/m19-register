@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<layout>
+
+    <customer_account_create>
+        <reference name="customer_form_register">
+            <block type="core/text_list" name="form.additional.info">
+                <block type="core/template" name="persistent.additional.fields" as="persistent_firlds" template="persistent/sak/register.phtml"/>
+            </block>
+        </reference>
+    </customer_account_create>
+
+<!--
+    <customer_account_create>
+        <block type="core/template" name="persistent.additional.fields" as="persistent_firlds" template="persistent/sak/register.phtml"/>
+        <reference name="customer_form_register">
+            <action method="setTemplate"><template>persistent/customer/form/register.phtml</template></action>
+            <block type="persistent/form_remember" name="persistent.remember.me" template="persistent/remember_me.phtml" />
+            <block type="core/template" name="persistent.remember.me.tooltip" template="persistent/remember_me_tooltip.phtml" />
+        </reference>
+    </customer_account_create>
+
+    <catalog_product_view>
+
+        <block type="core/template" name="product.info.attributes" as="product_attributes" template="catalog/product/view/sak/attributes.phtml"/>
+        <reference name="product.info.additional">
+            <action method="append"><block>product.info.attributes</block></action>
+        </reference>
+
+    </catalog_product_view>
+-->
+</layout>
