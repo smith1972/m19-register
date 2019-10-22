@@ -14,4 +14,30 @@
             </updates>
         </layout>
     </frontend>
+    <global>
+        <models>
+            <sak_register>
+                <class>SAK_Register_Model</class>
+                <resourceModel>sak_register_resource</resourceModel>
+            </sak_register>
+            <sak_register_resource>
+                <class>SAK_Register_Model_Resource</class>
+                <entities>
+                    <register>
+                        <table>sak_register</table>
+                    </register>
+                    <club>
+                        <table>sak_club</table>
+                    </club>
+                </entities>
+            </sak_register_resource>
+        </models>
+        <resources>
+            <sak_register_setup>
+                <setup>
+                    <module>SAK_Register</module>
+                </setup>
+            </sak_register_setup>
+        </resources>
+    </global>
 </config>
